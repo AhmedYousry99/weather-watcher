@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frameLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".features.drawer.settings.SettingsFragment">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/gradient_button_background"
+                android:gravity="center"
+                android:text="@string/location"
+                android:textColor="@color/on_primary" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/secondary"
+                app:cardCornerRadius="20dp">
+
+                <android.widget.RadioGroup
+                    android:id="@+id/locationRadioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp">
+
+                    <android.widget.RadioButton
+                        android:id="@+id/settingsGpsRadioButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/primary"
+                        android:minHeight="48dp"
+                        android:text="@string/gps"
+                        android:textColor="@color/on_secondary" />
+
+                    <android.widget.RadioButton
+                        android:id="@+id/settingsMapRadioButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/primary"
+                        android:minHeight="48dp"
+                        android:text="@string/map"
+                        android:textColor="@color/on_secondary" />
+                </android.widget.RadioGroup>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/gradient_button_background"
+                android:gravity="center"
+                android:text="@string/temperature"
+                android:textColor="@color/on_primary" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/secondary"
+                app:cardCornerRadius="20dp">
+
+                <android.widget.RadioGroup
+                    android:id="@+id/temperatureRadioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp">
+
+                    <android.widget.RadioButton
+                        android:id="@+id/settingsCelsiusRadioButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/primary"
+                        android:minHeight="48dp"
+                        android:text="@string/celsius"
+                        android:textColor="@color/on_secondary" />
+
+                    <android.widget.RadioButton
+                        android:id="@+id/settingsKelvinRadioButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/primary"
+                        android:minHeight="48dp"
+                        android:text="@string/kelvin"
+                        android:textColor="@color/on_secondary" />
+
+                    <android.widget.RadioButton
+                        android:id="@+id/settingsFahrenheitRadioButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/primary"
+                        android:minHeight="48dp"
+                        android:text="@string/fahrenheit"
+                        android:textColor="@color/on_secondary" />
+                </android.widget.RadioGroup>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/gradient_button_background"
+                android:gravity="center"
+                android:text="@string/notifications"
+                android:textColor="@color/on_primary" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/secondary"
+                app:cardCornerRadius="20dp">
+
+                <android.widget.RadioGroup
+                    android:id="@+id/notificationsRadioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp">
+
+                    <android.widget.RadioButton
+                        android:id="@+id/settingsEnableRadioButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/primary"
+                        android:minHeight="48dp"
+                        android:text="@string/enable"
+                        android:textColor="@color/on_secondary" />
+
+                    <android.widget.RadioButton
+                        android:id="@+id/settingsDisableRadioButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/primary"
+                        android:minHeight="48dp"
+                        android:text="@string/disable"
+                        android:textColor="@color/on_secondary" />
+                </android.widget.RadioGroup>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintGuide_percent="0.50"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/gradient_button_background"
+                android:gravity="center"
+                android:text="@string/language"
+                android:textColor="@color/on_primary" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/secondary"
+                app:cardCornerRadius="20dp">
+
+                <android.widget.RadioGroup
+                    android:id="@+id/languageRadioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp">
+
+                    <android.widget.RadioButton
+                        android:id="@+id/settingsEnglishRadioButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/primary"
+                        android:minHeight="48dp"
+                        android:text="@string/en"
+                        android:textColor="@color/on_secondary" />
+
+                    <android.widget.RadioButton
+                        android:id="@+id/settingsArabicRadioButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/primary"
+                        android:minHeight="48dp"
+                        android:text="@string/ar"
+                        android:textColor="@color/on_secondary" />
+                </android.widget.RadioGroup>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/gradient_button_background"
+                android:gravity="center"
+                android:text="@string/wind_speed"
+                android:textColor="@color/on_primary" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/secondary"
+                app:cardCornerRadius="20dp">
+
+                <android.widget.RadioGroup
+                    android:id="@+id/windSpeedRadioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp">
+
+                    <android.widget.RadioButton
+                        android:id="@+id/settingsMeterPerSecRadioButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/primary"
+                        android:minHeight="48dp"
+                        android:text="@string/meter_per_second"
+                        android:textColor="@color/on_secondary" />
+
+                    <android.widget.RadioButton
+                        android:id="@+id/settingsMilesPerHourRadioButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/primary"
+                        android:minHeight="48dp"
+                        android:text="@string/miles_per_hour"
+                        android:textColor="@color/on_secondary" />
+                </android.widget.RadioGroup>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
