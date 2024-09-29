@@ -1,4 +1,4 @@
-package com.senseicoder.emara.utils
+package com.senseicoder.weatherwatcher.utils.global
 
 import android.content.Context
 import android.net.ConnectivityManager
@@ -24,19 +24,20 @@ object NetworkUtils{
             connectionState = MutableLiveData<Boolean>()
 
             connectivityManager.registerNetworkCallback(request, object : NetworkCallback() {
+
                 override fun onAvailable(network: Network) {
-                    this@NetworkUtils.connectionState.let{
+                    connectionState.let{
                         it?.postValue(true)
                     }
                 }
                 override fun onLost(network: Network) {
-                    this@NetworkUtils.connectionState.let{
+                    connectionState.let{
                         it?.postValue(false)
                     }
                 }
             })
             if(!isConnected(context)){
-                this@NetworkUtils.connectionState.let{
+                connectionState.let{
                     it?.postValue(false)
                 }
             }
@@ -49,5 +50,6 @@ object NetworkUtils{
         val capabilities = cm.getNetworkCapabilities(cm.activeNetwork)
         return capabilities != null && capabilities.hasCapability(NetworkCapabilities.NET_CAPABILITY_INTERNET)
     }
+
 }
 
