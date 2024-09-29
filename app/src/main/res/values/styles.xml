@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ThemeOverlay.AppCompat.navTheme" parent="ThemeOverlay.AppCompat.Light">
+
+        <!-- Background color when SELECTED -->
+        <item name="colorControlHighlight">@color/primary</item>
+
+    </style>
+
+    <style name="SearchAutoCompleteTextView" parent="Widget.AppCompat.Light.SearchView">
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:editTextColor">@color/primary</item>
+        <item name="android:textColorHint">@color/primary_light</item>
+    </style>
+</resources>
