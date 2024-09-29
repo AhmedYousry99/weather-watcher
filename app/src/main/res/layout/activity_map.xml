@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mapFrameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".features.map.MapActivity">
+
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </org.osmdroid.views.MapView>
+
+    <SearchView
+        android:id="@+id/mapSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/location_searchview_background"
+        android:backgroundTint="@color/primary_light"
+        android:iconifiedByDefault="false"
+        android:imeOptions="actionDone"
+        android:inputType="text|textAutoComplete"
+        android:queryHint="@string/location_query_hint"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </SearchView>
+
+    <ListView
+        android:id="@+id/suggestionsListView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="-3dp"
+        android:layout_marginEnd="1dp"
+        android:background="@drawable/suggestion_list_view_bg"
+        android:visibility="gone"
+        app:layout_constrainedHeight="false"
+        app:layout_constraintEnd_toEndOf="@+id/mapSearchView"
+        app:layout_constraintStart_toStartOf="@+id/mapSearchView"
+        app:layout_constraintTop_toBottomOf="@+id/mapSearchView"
+        tools:listitem="@android:layout/simple_list_item_1"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
