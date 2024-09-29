@@ -2,4 +2,28 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="grey">#FF757575</color>
+    <color name="gradient_start">#00AF87</color>
+    <color name="gradient_center">#008571</color>
+    <color name="gradient_end">#008585</color>
+    <color name="light_black">#99000000</color>
+    <color name="custom_white">#FFFFFFFF</color>
+    <color name="primary">#00AF87</color>
+    <color name="primary_light">#6600AF87</color>
+    <color name="on_primary">#ECECEC</color>
+    <color name="secondary">#ECECEC</color>
+    <color name="on_secondary">#000000</color>
+    <color name="selected">#182F43</color>
+    <color name="on_selected">#FFFFFF</color>
+    <color name="unselected">#D9D9D9</color>
+    <color name="on_unselected">#000000</color>
+    <color name="facebook_color">#4460A0</color>
+    <color name="google_color">#FFFFFF</color>
+    <color name="disabled">#7B7B7B</color>
+    <color name="transparent">#00FFFFFF</color>
+
+    <color name="toolbar">#00AF87</color>
+    <color name="secondary_text_greyed">#757575</color>
+    <color name="secondary_items">#2d2d2d</color>
+    <color name="icon">#00AF87</color>
 </resources>
