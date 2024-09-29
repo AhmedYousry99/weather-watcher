@@ -71,7 +71,7 @@ data class WeatherDTO(
                 (res.main?.humidity ?: "unknown").toString(),
                 (res.wind?.speed ?: "unknown").toString(),
                 (res.clouds?.all ?: "unknown").toString(),
-                "0", //TODO: check how to handle uv
+                "0",
                 (res.visibility ?: "unknown").toString(),
                 (res.dt ?: 0),
                 location = (res.name ?: ""),

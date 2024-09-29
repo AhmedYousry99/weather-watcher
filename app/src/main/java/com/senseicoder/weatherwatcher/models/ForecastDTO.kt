@@ -28,7 +28,6 @@ data class ForecastDTO(
                     temperature = (it?.main?.temp ?: "unknown").toString(),
                     minTemperature = (it?.main?.tempMin ?: "unknown").toString(),
                     maxTemperature = (it?.main?.tempMax ?: "unknown").toString(),
-                    //TODO: check how ot handle weather list
                     description = (it?.weather?.get(0)?.description ?: "unknown").toString(),
                     tempIcon = (it?.weather?.get(0)?.icon ?: "unknown").toString(),
                     cloudiness = (it?.clouds?.all ?: "unknown").toString(),
